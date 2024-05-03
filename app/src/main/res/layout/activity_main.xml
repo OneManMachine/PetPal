@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImageView"
+        android:id="@+id/gifCat"
         android:layout_width="364dp"
         android:layout_height="391dp"
         android:src="@drawable/petwaiting"
