@@ -2,6 +2,7 @@ package com.oneofone.petpal
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -42,6 +43,8 @@ class SecondActivity : AppCompatActivity() {
         updateUI()
 
         btnFeed.setOnClickListener {
+            Log.i("ButtonClicked", "Feed button clicked") // Log button
+
             gifImage.setImageResource(R.drawable.eatingcat)
             updateUI()
             feedCat()
@@ -49,6 +52,8 @@ class SecondActivity : AppCompatActivity() {
 
         //Play button action
         btnPlay.setOnClickListener {
+            Log.i("ButtonClicked", "Play button clicked") // Log button
+
             gifImage.setImageResource(R.drawable.playingcat)
             updateUI()
             playCat()
@@ -56,6 +61,8 @@ class SecondActivity : AppCompatActivity() {
 
         //Clean button action
         btnClean.setOnClickListener {
+            Log.i("ButtonClicked", "Clean button clicked") // Log button
+
             gifImage.setImageResource(R.drawable.cleaningcat)
             updateUI()
             cleanCat()
